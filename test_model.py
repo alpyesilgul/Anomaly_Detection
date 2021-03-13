@@ -18,6 +18,7 @@ if __name__ == "__main__":
     features = quantify_image(hsv, bins=(3, 3, 3))
     pred = model.predict([features])[0]
     label = "anomaly" if pred == -1 else "normal"
+    print("Close the window for another test")
     cv2.imshow(str(label), image)
     cv2.waitKey(0)
 
