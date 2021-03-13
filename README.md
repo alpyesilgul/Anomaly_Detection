@@ -12,3 +12,4 @@ and than
 ```
 python test_model.py -m detection.model -i image1.jpg
 ```
+Then the window that opens and the window should have a prediction written above it.
